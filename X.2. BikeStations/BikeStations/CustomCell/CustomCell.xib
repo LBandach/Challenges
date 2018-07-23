@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" id="KGk-i7-Jjw" customClass="CustomCell" customModule="BikeStations" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StationAdress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ml-0u-n2c">
+                        <rect key="frame" x="16" y="38.5" width="311" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Y4F-Iw-Nxy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NQQ-k9-NJ7">
+                        <rect key="frame" x="0.0" y="58.5" width="343" height="18"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BikesAvalible" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sI-mZ-hWk">
+                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RacksAvalible" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fa3-Uc-PrL">
+                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StationName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8J-2q-Lci">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="gS7-6b-U9d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="NQQ-k9-NJ7" secondAttribute="bottom" id="1By-tf-a3z"/>
+                    <constraint firstAttribute="trailing" secondItem="F8J-2q-Lci" secondAttribute="trailing" id="6lW-Qr-I3W"/>
+                    <constraint firstItem="NQQ-k9-NJ7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9zn-Zi-0hp"/>
+                    <constraint firstAttribute="trailing" secondItem="NQQ-k9-NJ7" secondAttribute="trailing" id="FkB-Hj-O5W"/>
+                    <constraint firstItem="5Ml-0u-n2c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="URG-ja-r4n"/>
+                    <constraint firstItem="F8J-2q-Lci" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WWj-b1-Ddh"/>
+                    <constraint firstItem="F8J-2q-Lci" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ax4-mI-6MW"/>
+                    <constraint firstItem="NQQ-k9-NJ7" firstAttribute="top" secondItem="5Ml-0u-n2c" secondAttribute="bottom" id="eGf-xz-Uqj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="5Ml-0u-n2c" secondAttribute="trailing" id="uXA-gn-Gla"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bikesAvalible" destination="4sI-mZ-hWk" id="UjC-YA-fiN"/>
+                <outlet property="racksAvalible" destination="Fa3-Uc-PrL" id="1ho-TB-oaM"/>
+                <outlet property="stationAdress" destination="5Ml-0u-n2c" id="CYq-rJ-i2a"/>
+                <outlet property="stationName" destination="F8J-2q-Lci" id="oVG-IX-Q6Q"/>
+            </connections>
+            <point key="canvasLocation" x="42.5" y="-33.5"/>
+        </tableViewCell>
+    </objects>
+</document>
